@@ -1,6 +1,9 @@
 fn main() {
-    let nums = vec![1, 45, 64];
-    for x in nums {
-        println!("{}", x);
+    let thing = 0..100;
+    for value in thing {
+        print!("{}, ", value);
+        if value == 40 {
+            panic!("WAHH");
+        }
     }
 }
